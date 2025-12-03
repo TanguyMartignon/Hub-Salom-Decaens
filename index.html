@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mes liens</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --bg: #f7f7fb;
+      --card-bg: #ffffff;
+      --accent: #222;
+      --accent-soft: #e0e0ee;
+      --text-main: #222222;
+      --text-muted: #666666;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top left, #eeeeff, #ffffff);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      background: var(--card-bg);
+      padding: 24px 20px 20px;
+      border-radius: 18px;
+      box-shadow: 0 14px 35px rgba(15, 23, 42, 0.12);
+      max-width: 420px;
+      width: 100%;
+    }
+    .title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin: 0 0 4px;
+    }
+    .subtitle {
+      margin: 0 0 18px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .link {
+      text-decoration: none;
+      border-radius: 999px;
+      padding: 11px 14px;
+      border: 1px solid var(--accent-soft);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.95rem;
+      transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease, background 0.12s ease;
+      background: #fafafa;
+    }
+    .link-label {
+      font-weight: 500;
+    }
+    .link-tag {
+      font-size: 0.8rem;
+      padding: 3px 8px;
+      border-radius: 999px;
+      border: 1px dashed var(--accent-soft);
+      color: var(--text-muted);
+    }
+    .link:hover {
+      transform: translateY(-1px);
+      border-color: var(--accent);
+      box-shadow: 0 10px 22px rgba(15, 23, 42, 0.16);
+      background: #ffffff;
+    }
+    .footer {
+      margin-top: 18px;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      text-align: center;
+      opacity: 0.8;
+    }
+    @media (max-width: 480px) {
+      .card {
+        padding: 22px 16px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1 class="title">Retrouvez tous mes liens</h1>
+    <p class="subtitle">Site web, réseaux sociaux &amp; contacts en un seul endroit.</p>
+
+    <section class="links">
+      <!-- 🔗 Remplace les URL et les textes ci-dessous par les tiens -->
+      <a class="link" href="https://ton-site-web.fr" target="_blank" rel="noopener">
+        <span class="link-label">Site web</span>
+        <span class="link-tag">Bientôt disponible</span>
+      </a>
+
+      <a class="link" href="https://www.instagram.com/salomedecaens?igsh=ZDdlbGY5YnlmbXI0" target="_blank" rel="noopener">
+        <span class="link-label">Instagram</span>
+        <span class="link-tag">@salomedecaens</span>
+      </a>
+
+      <a class="link" href="https://www.facebook.com/profile.php?id=61581925316598" target="_blank" rel="noopener">
+        <span class="link-label">Facebook</span>
+        <span class="link-tag">Salomé Decaens</span>
+      </a>
+    </section>
+
+    <p class="footer">
+      ✏️ Tu peux modifier cette page dans un simple éditeur de texte (Bloc-notes, VS Code, etc.).
+    </p>
+  </main>
+</body>
+</html>
